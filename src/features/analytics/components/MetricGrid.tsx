@@ -12,7 +12,7 @@ export async function MetricsGrid({ tenantId }: MetricsGridProps) {
     {
       title: "Total Revenue",
       value: `₦${metrics.totalRevenue.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`,
-      description: `+${metrics.salesGrowth}% from last week`,
+      description: `+${metrics.totalRevenue}% from last week`,
       textColor: "text-emerald-600",
     },
     {
