@@ -1,6 +1,7 @@
 {
   "name": "ecommerce-saas",
   "version": "0.1.0",
+  "packageManager": "pnpm@10.5.2",
   "private": true,
   "scripts": {
     "dev": "next dev",
