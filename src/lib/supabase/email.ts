@@ -1,7 +1,7 @@
 import { Resend } from "resend";
 import * as Sentry from "@sentry/nextjs";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+const resend = new Resend(process.env.RESEND_API_KEY || "re_dummy_key_for_build");
 
 interface OrderEmailProps {
   buyerEmail: string;
