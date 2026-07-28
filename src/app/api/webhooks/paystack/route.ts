@@ -3,14 +3,16 @@ import crypto from "crypto";
 import { createClient } from "@supabase/supabase-js";
 import { sendOrderConfirmationEmails } from "@/lib/supabase/email";
 import * as Sentry from "@sentry/nextjs";
-
-// Initialize a Supabase Admin client using the Service Role Key to bypass RLS in webhooks
-const supabaseAdmin = createClient(
-  process.env.NEXT_PUBLIC_SUPABASE_URL!,
-  process.env.SUPABASE_SERVICE_ROLE_KEY!
-);
-
+ 
 export async function POST(request: Request) {
+  const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!
+  const supabaseKey = process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
+
+  if (!supabaseUrl || !supabaseKey) {
+    return new Response('Missing Supabase credentials', { status: 500 })
+  }
+
+  const supabase = createClient(supabaseUrl, supabaseKey)
   try {
     const bodyText = await request.text();
     const paystackSignature = request.headers.get("x-paystack-signature");
