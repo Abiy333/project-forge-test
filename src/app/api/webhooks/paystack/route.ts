@@ -3,6 +3,7 @@ import crypto from "crypto";
 import { createClient } from "@supabase/supabase-js";
 import { sendOrderConfirmationEmails } from "@/lib/supabase/email";
 import * as Sentry from "@sentry/nextjs";
+import { supabaseAdmin } from "@/lib/supabase/admin";
  
 export async function POST(request: Request) {
   const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!
