@@ -7,7 +7,7 @@ export default function SaaSLandingPage() {
     <div className="min-h-screen bg-zinc-950 text-zinc-100 flex flex-col justify-between selection:bg-lime-400 selection:text-zinc-950">
       
       {/* 1. Neon Top Bar */}
-      <div className="bg-gradient-to-r from-lime-500 via-emerald-400 to-cyan-400 text-zinc-950 text-xs font-black py-2 px-4 text-center tracking-wider uppercase shadow-[0_0_20px_rgba(34,197,94,0.3)]">
+      <div className="bg-linear-to-r from-lime-500 via-emerald-400 to-cyan-400 text-zinc-950 text-xs font-black py-2 px-4 text-center tracking-wider uppercase shadow-[0_0_20px_rgba(34,197,94,0.3)]">
         ⚡ LAUNCH YOUR MULTI-TENANT STOREFRONT IN UNDER 2 MINUTES • POWERED BY PAYSTACK
       </div>
 
@@ -18,7 +18,7 @@ export default function SaaSLandingPage() {
             <div className="h-9 w-9 rounded-xl bg-lime-400 text-zinc-950 flex items-center justify-center font-black text-2xl shadow-[0_0_20px_rgba(163,230,53,0.6)]">
               F
             </div>
-            <span className="bg-gradient-to-r from-white via-zinc-100 to-lime-400 bg-clip-text text-transparent">
+            <span className="bg-linear-to-r from-white via-zinc-100 to-lime-400 bg-clip-text text-transparent">
               FORGE
             </span>
           </div>
@@ -43,8 +43,8 @@ export default function SaaSLandingPage() {
         
         {/* Electric Radial Background Glows */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-lime-500/15 rounded-full blur-[120px] -z-10 pointer-events-none" />
-        <div className="absolute top-1/4 right-10 w-[300px] h-[300px] bg-purple-600/20 rounded-full blur-[100px] -z-10 pointer-events-none" />
-        <div className="absolute bottom-10 left-10 w-[300px] h-[300px] bg-cyan-500/15 rounded-full blur-[100px] -z-10 pointer-events-none" />
+        <div className="absolute top-1/4 right-10 w-75 h-75 bg-purple-600/20 rounded-full blur-[100px] -z-10 pointer-events-none" />
+        <div className="absolute bottom-10 left-10 w-75 h-75 bg-cyan-500/15 rounded-full blur-[100px] -z-10 pointer-events-none" />
 
         {/* Neon Badge */}
         <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-lime-400/40 bg-lime-950/30 text-xs text-lime-400 font-bold shadow-[0_0_15px_rgba(163,230,53,0.2)]">
@@ -55,7 +55,7 @@ export default function SaaSLandingPage() {
         {/* Hero Headline */}
         <h1 className="text-4xl sm:text-7xl font-black tracking-tight text-white leading-tight">
           Sell anything online with <br />
-          your own <span className="bg-gradient-to-r from-lime-400 via-emerald-300 to-cyan-400 bg-clip-text text-transparent underline decoration-lime-400/50 underline-offset-8">custom store.</span>
+          your own <span className="bg-linear-to-r from-lime-400 via-emerald-300 to-cyan-400 bg-clip-text text-transparent underline decoration-lime-400/50 underline-offset-8">custom store.</span>
         </h1>
 
         <p className="max-w-2xl mx-auto text-base sm:text-lg text-zinc-400 leading-relaxed font-normal">
