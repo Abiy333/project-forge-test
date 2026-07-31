@@ -1,5 +1,3 @@
-"use client";
-
 import { signup } from "@/features/auth/actions";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
